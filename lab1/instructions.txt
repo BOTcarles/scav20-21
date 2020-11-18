@@ -1,0 +1,8 @@
+(2)
+ffmpeg -i lenna.png -vf scale=-1:256 lenna_half.png
+
+(3)
+Using hue/saturation: 
+ffmpeg -i lenna.png -vf hue=s=0 lenna_bwhue.png
+Using format=grey: 
+ffmpeg -i lenna.png -vf format=grey lenna_bw.png
